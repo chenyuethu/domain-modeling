@@ -7,7 +7,8 @@ DROP TABLE IF EXISTS calls;
 DROP TABLE IF EXISTS emails;
 DROP TABLE IF EXISTS companies;
 DROP TABLE IF EXISTS users;
-
+DROP TABLE IF EXISTS industries;
+DROP TABLE IF EXISTS categories;
 
 -- CREATE TABLES
 
@@ -45,4 +46,15 @@ CREATE TABLE users (
   first_name TEXT,
   last_name TEXT,
   email TEXT
+);
+
+CREATE TABLE industries (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT
+);
+
+CREATE TABLE categories (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  company_id INTEGER,
+  industry_id INTEGER
 );
