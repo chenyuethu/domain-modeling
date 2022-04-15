@@ -17,13 +17,13 @@ CREATE TABLE contacts (
   last_name TEXT,
   email TEXT,
   phone TEXT,
+  title TEXT,
   company_id INTEGER
 );
 
 CREATE TABLE calls (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   date TEXT,
-  time TEXT,
   notes TEXT,
   contact_id INTEGER
 );
@@ -31,7 +31,6 @@ CREATE TABLE calls (
 CREATE TABLE emails (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   date TEXT,
-  time TEXT,
   notes TEXT,
   contact_id INTEGER
 );
