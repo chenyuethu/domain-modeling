@@ -26,14 +26,16 @@ CREATE TABLE calls (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   date TEXT,
   notes TEXT,
-  contact_id INTEGER
+  contact_id INTEGER,
+  salesperson_id INTEGER
 );
 
 CREATE TABLE emails (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   date TEXT,
   notes TEXT,
-  contact_id INTEGER
+  contact_id INTEGER,
+  salesperson_id INTEGER
 );
 
 CREATE TABLE companies (
